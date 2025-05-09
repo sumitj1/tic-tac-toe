@@ -1,38 +1,91 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+.select {
+  width: 30%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+body {
+  background: #9df9ef;
+  /* background-image: url(/public/celebration.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: auto;
+  width: fit-content;
+  margin-top: 4rem;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.block {
+  min-height: 100px;
+  min-width: 100px;
+  height: 100%;
+  width: 100%;
+  background-color: beige;
+  border: 1px solid rgb(151, 151, 133);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.result {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 0.6rem;
 }
 
-.App-link {
-  color: #61dafb;
+.message {
+  font-size: 20px;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  padding: 12px 45px;
+  border-radius: 10px;
+  border: none;
+  background: cornflowerblue;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
 }
+
